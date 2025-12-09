@@ -9,12 +9,13 @@ const pressStart = Press_Start_2P({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-pixel",
+  display: "swap", // Optimización de carga de fuente
 })
 
 export const metadata: Metadata = {
-  title: "Mario Mods Repository - 8-Bit Style",
-  description: "Browse and download Super Mario Bros inspired mods with retro 8-bit aesthetic",
-  generator: "v0.app",
+  title: "Retired64 - Sm64CoopDx Mods",
+  description: "Browse and download Sm64CoopDx Mods of Retired64",
+  generator: "Retired64 Github",
   icons: {
     icon: [
       {
@@ -32,6 +33,12 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+  // Prevenir flash de contenido sin estilos
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fef0f5" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a2952" },
+  ],
 }
 
 export const viewport: Viewport = {
@@ -39,6 +46,11 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: light)", color: "#fef0f5" },
     { media: "(prefers-color-scheme: dark)", color: "#1a2952" },
   ],
+  // Optimización para móvil
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default function RootLayout({
@@ -47,10 +59,39 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html 
+      lang="en" 
+      suppressHydrationWarning
+      // Prevenir layout shift durante carga de tema
+      className="scroll-smooth"
+    >
+      <head>
+        {/* Preload critical resources */}
+        <link rel="preload" href="/icon.svg" as="image" type="image/svg+xml" />
+        {/* Prevenir FOIT (Flash of Invisible Text) */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            @font-face {
+              font-family: 'Press Start 2P';
+              font-display: swap;
+              src: url('https://fonts.gstatic.com/s/pressstart2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2') format('woff2');
+            }
+          `
+        }} />
+      </head>
       <body className={`${pressStart.variable} font-sans antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="system" 
+          enableSystem 
+          disableTransitionOnChange
+          // Forzar tema inicial para prevenir parpadeo
+          storageKey="mario-mods-theme"
+        >
+          {/* Loading state global opcional */}
+          <div className="min-h-screen bg-background">
+            {children}
+          </div>
           <Analytics />
         </ThemeProvider>
       </body>
