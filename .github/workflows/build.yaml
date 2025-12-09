@@ -47,7 +47,7 @@ jobs:
       run: |
         rm -rf docs
         mkdir -p docs
-        cp -r out/* docs/
+        cp -r export/* docs/
         touch docs/.nojekyll
       
     - name: Commit and push docs folder
