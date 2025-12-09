@@ -1,379 +1,65 @@
 {
   "mods": [
     {
-      "id": "mega-mushroom-expansion",
-      "title": "Mega Mushroom Expansion Pack",
-      "shortDescription": "Transform into a giant Mario with new abilities and physics-based destruction",
+      "id": "mario-size",
+      "title": "Mario Size v1.0.1",
+      "shortDescription": "Mario Size lets you shrink or grow Mario on the fly, changing how he moves around!",
       "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Powerup", "Gameplay", "Physics", "New Abilities"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/mega-mushroom-expansion.zip",
-      "detailedDescription": "Experience Mario like never before with the Mega Mushroom Expansion Pack! This mod introduces the classic Mega Mushroom power-up with enhanced physics, destructible environments, and completely new gameplay mechanics. Crush enemies, break through blocks, and discover hidden areas only accessible in mega form. Compatible with all world themes and includes custom sound effects.",
-      "features": [
-        "Transform into Giant Mario with realistic physics simulation",
-        "Destructible environment system - break through walls and platforms",
-        "New enemy interactions and defeat animations",
-        "Custom sound effects and visual effects",
-        "Compatible with multiplayer mode",
-        "Includes 5 exclusive Mega-only challenge levels",
-        "Performance optimized for smooth 60 FPS gameplay"
+      "tags": [
+        "Utility",
+        "Gameplay",
+        "Physics",
+        "SM64CoopDX",
+        "Multiplayer"
       ],
-      "activation": "Extract to game directory > Enable in Mods menu > Press L+R during gameplay to activate Mega form",
-      "youtubeVideoId": "dQw4w9WgXcQ",
+      "hasDownload": true,
+      "downloadUrl": "https://github.com/retired64/Mario-Size/releases/download/v1.0.1/mario-size-changer-latest-1.0.1.zip",
+      "detailedDescription": "Mario Size lets you shrink or grow Mario on the fly, changing how he moves around! Inspired by 'Fire Ball Mario's Moveset', this independent mod is perfect for speedruns, challenges, or just messing around. It functions as a neutral gameplay experience compatible with multiplayer. This version (v1.0.1) serves as the stable release with critical bug fixes for level entry freezes and optimized camera logic. Requires sm64coopdx v1.4 or above.",
+      "features": [
+        "Shrink Mode: Hold Y to get smaller and walk faster",
+        "Grow Mode: Press Y twice (hold on 2nd) to get bigger and slower",
+        "Giant effects: Ground shakes with steps and added Bowser footstep sounds",
+        "Reset Size: Press X to instantly return to normal size",
+        "Multiplayer: Optimized camera shake and increased max size limit",
+        "Bug Fix: Added validation to prevent logic execution during cutscenes",
+        "Requires sm64coopdx v1.4 or above"
+      ],
+      "activation": "Hold Y (Shrink) > Press Y twice & Hold (Grow) > Press X (Reset)",
       "images": [
-        "/placeholder.svg?height=400&width=600",
         "/placeholder.svg?height=400&width=600",
         "/placeholder.svg?height=400&width=600"
       ]
     },
     {
-      "id": "retro-remix-soundtrack",
-      "title": "Retro Remix Soundtrack",
-      "shortDescription": "Complete audio overhaul with 8-bit remixes of classic Mario themes",
+      "id": "rd-notify-message",
+      "title": "RD Notify Message v1.0",
+      "shortDescription": "Notification System for SM64 Coop DX. Create custom visual notifications on screen to communicate with your friends.",
       "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Audio", "Music", "Sound Effects", "Retro"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/retro-remix-soundtrack.zip",
-      "detailedDescription": "Relive the nostalgia with over 50 professionally remastered 8-bit tracks! This comprehensive audio mod replaces every music track and sound effect in the game with crystal-clear retro remixes. Each track has been carefully crafted to maintain the spirit of the original while adding modern production quality. Includes dynamic music layers that respond to gameplay.",
-      "features": [
-        "50+ remastered music tracks in authentic 8-bit style",
-        "200+ enhanced sound effects with chip-tune authenticity",
-        "Dynamic music system that changes with gameplay intensity",
-        "Individual volume controls for music, SFX, and voice",
-        "Lossless audio quality for maximum fidelity",
-        "Custom jukebox feature to play any track on demand",
-        "Zero performance impact on gameplay"
+      "tags": [
+        "Utility",
+        "Multiplayer",
+        "Communication",
+        "Tools",
+        "Host Only"
       ],
-      "activation": "Install via Mod Manager > Restart game > Audio changes take effect immediately",
-      "images": ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"]
-    },
-    {
-      "id": "castle-builder-pro",
-      "title": "Castle Builder Pro",
-      "shortDescription": "Level editor with drag-and-drop interface and 500+ custom assets",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Level Editor", "Creative", "Tools", "Community"],
       "hasDownload": true,
-      "downloadUrl": "/downloads/castle-builder-pro.zip",
-      "detailedDescription": "Unleash your creativity with the most powerful Mario level editor ever created! Castle Builder Pro features an intuitive drag-and-drop interface, hundreds of custom objects, and advanced scripting capabilities. Share your creations with the community and download levels from other builders. Perfect for both beginners and expert level designers.",
+      "downloadUrl": "https://github.com/retired64/rd-Notify-Messages/releases/download/v1.0/RD-Notify.zip",
+      "detailedDescription": "Create custom visual notifications on screen to communicate with your friends during multiplayer. Perfect for announcing events, giving instructions, or just leaving funny messages. This host-only tool supports permanent alerts and timed messages ranging from 5 to 30 seconds. Features extensive customization including colors (basic, themed, rainbow), movement animations, and glow effects. Long messages auto-wrap and timed alerts fade out smoothly. Credit to Djoslin0 for Lib source.",
       "features": [
-        "Intuitive drag-and-drop level editor interface",
-        "500+ custom objects, enemies, and platforms",
-        "Advanced scripting system for custom behaviors",
-        "Built-in physics testing and debugging tools",
-        "One-click sharing to online community portal",
-        "Import/Export levels in multiple formats",
-        "Real-time multiplayer co-op editing mode",
-        "Includes 20 tutorial templates to get started"
+        "Permanent Alerts: /rdt [message] (stays on screen)",
+        "Timed Alerts: /rdt5, /rdt10, /rdt15, /rdt20, /rdt30 (seconds)",
+        "Color Customization: /rdc [color] (Includes Mario Red, Luigi Green, Rainbow, etc.)",
+        "Visual Effects: Toggle movement (/rdn) and glow (/rdb)",
+        "Logic: Movement ON + Glow ON = Pulsing text; Movement OFF = Static text",
+        "Auto-wrapping for long messages",
+        "Host-only permissions for command usage"
       ],
-      "activation": "Launch via Mods menu > Select 'Level Editor' > Press F1 for tutorial",
-      "youtubeVideoId": "dQw4w9WgXcQ",
+      "activation": "Open Chat > Type /rdt [message] to start (Host only)",
+      "youtubeVideoId": "fGHupYHuAd8",
       "images": [
-        "/placeholder.svg?height=400&width=600",
         "/placeholder.svg?height=400&width=600",
         "/placeholder.svg?height=400&width=600"
       ]
-    },
-    {
-      "id": "yoshi-rainbow-riders",
-      "title": "Yoshi Rainbow Riders",
-      "shortDescription": "Unlock 8 different colored Yoshis, each with unique special abilities",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Character", "Yoshi", "Powerup", "Multiplayer"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/yoshi-rainbow-riders.zip",
-      "detailedDescription": "Meet the Yoshi Rainbow Riders! This mod introduces 8 uniquely colored Yoshis, each with their own special ability and personality. From Blue Yoshi's water abilities to Purple Yoshi's toxic breath, discover new ways to traverse levels and defeat enemies. All Yoshis feature custom animations, sounds, and balanced gameplay mechanics.",
-      "features": [
-        "8 different colored Yoshis with unique abilities",
-        "Red Yoshi: Fire breath that melts ice blocks",
-        "Blue Yoshi: Water spray for underwater advantages",
-        "Yellow Yoshi: Ground pound creates shockwaves",
-        "Purple Yoshi: Toxic breath damages multiple enemies",
-        "Custom animations and personality traits for each",
-        "Multiplayer mode supports different Yoshis per player",
-        "Unlock system with progression achievements"
-      ],
-      "activation": "Install mod > Complete first castle > Unlock Yoshi stables > Select your Yoshi",
-      "youtubeVideoId": "dQw4w9WgXcQ",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "hd-texture-overhaul",
-      "title": "HD Texture Overhaul 4K",
-      "shortDescription": "High-definition texture pack maintaining the retro art style with modern clarity",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Graphics", "HD", "Visual", "Enhancement"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/hd-texture-overhaul.zip",
-      "detailedDescription": "Experience Mario in stunning 4K resolution while preserving the iconic pixel art aesthetic! This comprehensive texture pack upscales every sprite, background, and UI element using advanced AI algorithms. The result is crisp, clear visuals that look incredible on modern displays without losing the retro charm. Optional filters let you customize the look to your preference.",
-      "features": [
-        "4K resolution textures for all game assets",
-        "AI-upscaled sprites maintaining pixel art style",
-        "Enhanced background parallax layers",
-        "Crystal-clear UI and menu systems",
-        "Multiple visual presets: Classic, Enhanced, Ultra",
-        "Optimized for both performance and quality",
-        "Compatible with all other visual mods",
-        "Automatic resolution scaling based on hardware"
-      ],
-      "activation": "Extract to textures folder > Select 'HD Mode' in graphics options > Restart level",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "bowser-boss-rush",
-      "title": "Bowser Boss Rush Ultimate",
-      "shortDescription": "Face 15 challenging Bowser variations with unique attack patterns",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Boss", "Challenge", "Combat", "Endgame"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/bowser-boss-rush.zip",
-      "detailedDescription": "Think you've mastered Mario? Face the ultimate challenge with Bowser Boss Rush Ultimate! Battle through 15 increasingly difficult Bowser variants, each with unique attack patterns, special abilities, and environmental hazards. Unlock special rewards, speedrun modes, and leaderboard rankings. Only the most skilled players will claim victory!",
-      "features": [
-        "15 unique Bowser boss fights with custom mechanics",
-        "Progressive difficulty scaling and attack patterns",
-        "Special rewards for completing challenges",
-        "Speedrun timer with online leaderboards",
-        "Multiple difficulty modes: Normal, Hard, Insane",
-        "Boss arena has dynamic environmental hazards",
-        "Unlock secret Super Bowser final encounter",
-        "Custom boss music tracks for each battle"
-      ],
-      "activation": "Available after completing main story > Access via 'Challenge Portal' in castle",
-      "youtubeVideoId": "dQw4w9WgXcQ",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "pipe-world-expansion",
-      "title": "Pipe World Secret Expansion",
-      "shortDescription": "10 new secret worlds accessible through hidden warp pipes",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["World", "Secret", "Exploration", "Adventure"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/pipe-world-expansion.zip",
-      "detailedDescription": "Discover a whole new dimension of Mario! The Pipe World Secret Expansion adds 10 completely original worlds hidden throughout the game. Each world features unique themes, enemies, and challenges. From the Crystal Caverns to the Sky Palace, explore beautifully crafted environments with hundreds of secrets to uncover. This mod doubles your gameplay time!",
-      "features": [
-        "10 brand new worlds with unique themes",
-        "Over 80 new levels to explore",
-        "Hidden warp pipes scattered throughout original game",
-        "New enemy types exclusive to secret worlds",
-        "Unique power-ups and collectibles in each world",
-        "Progressive unlock system rewards exploration",
-        "Custom world maps with multiple paths",
-        "Estimated 20+ hours of additional gameplay"
-      ],
-      "activation": "Install mod > Look for glowing green pipes in original levels > Jump in to discover!",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "coop-chaos-multiplayer",
-      "title": "Co-op Chaos Multiplayer",
-      "shortDescription": "Enhanced 4-player co-op with team challenges and competitive minigames",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Multiplayer", "Co-op", "Party", "Competitive"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/coop-chaos-multiplayer.zip",
-      "detailedDescription": "Mario is better with friends! Co-op Chaos Multiplayer transforms the game into the ultimate party experience. Play through the entire campaign with up to 4 players in cooperative mode, or compete in dozens of original minigames. Features team challenges, versus modes, and a dedicated party hub. Online and local multiplayer supported!",
-      "features": [
-        "4-player cooperative campaign mode",
-        "30+ competitive minigames and challenges",
-        "Team-based boss battles with coordination mechanics",
-        "Online and local multiplayer support",
-        "Drop-in/drop-out gameplay at any time",
-        "Shared coin collection with team bonuses",
-        "Dedicated party hub with matchmaking",
-        "Custom lobby system with game mode voting"
-      ],
-      "activation": "Launch from main menu > Select 'Multiplayer Mode' > Invite friends or join online lobby",
-      "youtubeVideoId": "dQw4w9WgXcQ",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "speedrun-toolkit",
-      "title": "Speedrun Toolkit Pro",
-      "shortDescription": "Professional speedrunning tools with splits, practice mode, and frame-perfect inputs",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Speedrun", "Tools", "Practice", "Competitive"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/speedrun-toolkit.zip",
-      "detailedDescription": "Master every frame with Speedrun Toolkit Pro! Designed for serious speedrunners and competitive players, this mod includes split timers, save states, practice mode, input display, and frame-by-frame analysis tools. Study optimal routes, practice difficult tricks, and track your improvement. Integrates with popular speedrun platforms for automatic submission.",
-      "features": [
-        "Customizable split timer with segment tracking",
-        "Save state system for practicing difficult sections",
-        "Input display showing frame-perfect inputs",
-        "Frame-by-frame advance for studying techniques",
-        "Route planning tool with visual markers",
-        "Automatic best-time tracking and comparison",
-        "Integration with speedrun.com for submissions",
-        "Ghost data to race against your personal bests"
-      ],
-      "activation": "Enable in Mods menu > Press F3 to open toolkit > Configure splits and practice mode",
-      "images": ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"]
-    },
-    {
-      "id": "luigi-mansion-mode",
-      "title": "Luigi's Mansion Mode",
-      "shortDescription": "Play as Luigi with his Poltergust vacuum in spooky mansion-themed levels",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Character", "Luigi", "Theme", "Unique Gameplay"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/luigi-mansion-mode.zip",
-      "detailedDescription": "Step into Luigi's shoes with this atmospheric total conversion mod! Luigi's Mansion Mode reimagines classic levels with spooky mansion themes and introduces Luigi's iconic Poltergust vacuum. Suck up ghosts, solve paranormal puzzles, and explore haunted environments. Features completely new gameplay mechanics, enemy types, and a darker aesthetic while maintaining the Mario charm.",
-      "features": [
-        "Play as Luigi with unique movement physics",
-        "Poltergust vacuum mechanic for ghost catching",
-        "15 mansion-themed levels with atmospheric lighting",
-        "New ghost enemy types with AI behaviors",
-        "Paranormal puzzle mechanics and hidden rooms",
-        "Flashlight mechanic to reveal secrets",
-        "Haunted collectibles and ghost gallery",
-        "Original spooky soundtrack and sound effects"
-      ],
-      "activation": "Select 'Luigi Mode' from character menu > Complete tutorial mansion > Full campaign unlocks",
-      "youtubeVideoId": "dQw4w9WgXcQ",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "randomizer-ultimate",
-      "title": "Ultimate Randomizer",
-      "shortDescription": "Complete game randomization with customizable chaos settings",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Randomizer", "Replayability", "Challenge", "Custom"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/randomizer-ultimate.zip",
-      "detailedDescription": "No two playthroughs are ever the same! Ultimate Randomizer shuffles every aspect of the game - enemy placements, item locations, level order, physics, and even color palettes. With dozens of customization options, you can create anything from slightly unpredictable to absolute chaos. Perfect for endless replayability and challenge runs. Seed sharing lets you race friends on identical randomized games.",
-      "features": [
-        "Randomize enemies, items, and level layouts",
-        "Physics randomization for unique movement",
-        "Color palette shuffling for visual variety",
-        "Customizable chaos levels: Mild to Extreme",
-        "Seed system for sharing exact randomizations",
-        "Logic-based randomization ensures completability",
-        "Daily challenge seeds with leaderboards",
-        "Save and load custom randomization profiles"
-      ],
-      "activation": "Main menu > Randomizer Options > Choose settings > Generate seed > Start new game",
-      "images": ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"]
-    },
-    {
-      "id": "toad-rescue-missions",
-      "title": "Toad Rescue Missions",
-      "shortDescription": "Side quest system with 50 Toad rescue missions and unique rewards",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Side Quest", "NPCs", "Collectible", "Story"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/toad-rescue-missions.zip",
-      "detailedDescription": "The Toads need your help! This mod adds an extensive side quest system with 50 unique rescue missions scattered throughout the game. Each Toad has their own personality, backstory, and special reward. Track missions in your journal, unlock new abilities, and discover hidden storylines. Completing all missions rewards you with the ultimate secret ending!",
-      "features": [
-        "50 unique Toad rescue missions with stories",
-        "Mission journal with tracking and hints",
-        "Special rewards and unlockable abilities",
-        "Hidden dialogue trees and character development",
-        "Secret ending for 100% completion",
-        "Toad village hub that grows with rescues",
-        "Time-based missions and optional challenges",
-        "Multiple solution paths for creative gameplay"
-      ],
-      "activation": "Installed automatically > Check map for Toad distress signals > Approach to start mission",
-      "images": ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"]
-    },
-    {
-      "id": "star-power-expansion",
-      "title": "Star Power Expansion",
-      "shortDescription": "Enhanced star power with 5 transformation types and combo system",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Powerup", "Combat", "Visual", "Enhancement"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/star-power-expansion.zip",
-      "detailedDescription": "Star power like never before! This mod completely overhauls the star power-up system, introducing 5 different transformation types based on how many stars you collect. Build combos by defeating enemies, trigger spectacular visual effects, and unlock ultimate abilities. Features a dynamic score multiplier system and achievement tracking for skilled players.",
-      "features": [
-        "5 star transformation tiers with unique effects",
-        "Combo system with score multipliers",
-        "Dynamic visual effects and screen shake",
-        "Ultimate ability: Rainbow Star Burst attack",
-        "Extended star duration with combo maintenance",
-        "Achievement system for advanced techniques",
-        "Custom particle effects and lighting",
-        "Compatible with multiplayer modes"
-      ],
-      "activation": "Install mod > Collect star as normal > Build combos to unlock higher tiers",
-      "youtubeVideoId": "dQw4w9WgXcQ",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "weather-system-dynamic",
-      "title": "Dynamic Weather System",
-      "shortDescription": "Real-time weather effects including rain, snow, wind, and storms",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Weather", "Environment", "Visual", "Gameplay"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/weather-system-dynamic.zip",
-      "detailedDescription": "Experience Mario worlds in a whole new light with the Dynamic Weather System! This mod adds real-time weather that affects both visuals and gameplay. Rain makes surfaces slippery, wind affects jump trajectories, snow reduces visibility, and thunderstorms create dangerous lightning. Each weather type features stunning particle effects and changes enemy behavior patterns.",
-      "features": [
-        "5 weather types: Rain, Snow, Wind, Storm, Fog",
-        "Dynamic weather transitions and cycles",
-        "Gameplay-affecting weather mechanics",
-        "Realistic particle systems and sound effects",
-        "Weather influences enemy AI and behavior",
-        "Optional weather forecast system",
-        "Performance-optimized particle rendering",
-        "Compatible with all world themes"
-      ],
-      "activation": "Enable in Mods menu > Weather appears naturally during gameplay > Toggle forecast in options",
-      "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
-      ]
-    },
-    {
-      "id": "classic-mode-authentic",
-      "title": "Classic Mode Authentic",
-      "shortDescription": "Authentic NES-era physics, graphics, and sound for ultimate nostalgia",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
-      "tags": ["Retro", "Classic", "Authentic", "Nostalgia"],
-      "hasDownload": true,
-      "downloadUrl": "/downloads/classic-mode-authentic.zip",
-      "detailedDescription": "Travel back to 1985 with Classic Mode Authentic! This total conversion mod recreates the exact physics, graphics, sound, and even bugs from the original NES Mario games. Every detail has been meticulously researched and recreated, from sprite flickering to frame-perfect jump mechanics. Perfect for purists and speedrunners who want the authentic classic experience.",
-      "features": [
-        "Authentic NES-era physics engine",
-        "Original 8-bit sprite graphics",
-        "Classic chiptune audio reproduction",
-        "Historical bug preservation for speedrunning",
-        "CRT filter with scan lines and color bleeding",
-        "4:3 aspect ratio with border art",
-        "Input latency matching original hardware",
-        "Accurate frame rate (60.0988 FPS)"
-      ],
-      "activation": "Select 'Classic Mode' from main menu > All settings auto-configured > Play pure nostalgia",
-      "images": ["/placeholder.svg?height=400&width=600", "/placeholder.svg?height=400&width=600"]
     }
   ]
 }
