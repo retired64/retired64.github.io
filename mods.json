@@ -22,7 +22,7 @@
         "Requires sm64coopdx v1.4 or above"
       ],
       "activation": "Hold Y (Shrink) > Press Y twice & Hold (Grow) > Press X (Reset)",
-      "youtubeVideoId": "9l7jSN3ac6w",
+      "youtubeVideoId": "7De1M-Fkmsc",
       "images": [
         "https://cdn.jsdelivr.net/gh/retired64/retired64.github.io@main/m-s.png"
       ]
@@ -31,12 +31,9 @@
       "id": "rd-notify-message",
       "title": "RD Notify Message v1.0",
       "shortDescription": "Notification System for SM64 Coop DX. Create custom visual notifications on screen to communicate with your friends.",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
+      "thumbnail": "https://cdn.jsdelivr.net/gh/retired64/Releases@main/rdn.webp",
       "tags": [
         "Utility",
-        "Multiplayer",
-        "Communication",
-        "Tools",
         "Host Only"
       ],
       "hasDownload": true,
@@ -62,7 +59,7 @@
       "id": "fire-ball-marios-moveset",
       "title": "Fire Ball Mario's Moveset v1.0",
       "shortDescription": "Adds four new custom moves: Air Spin, Fire Tornado, Rocket Jump, and a shrinking Roll.",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
+      "thumbnail": "https://cdn.jsdelivr.net/gh/retired64/Releases@main/fbm.webp",
       "tags": [
         "Moveset",
         "Gameplay",
@@ -80,6 +77,7 @@
         "Includes 'Door Bust' feature (thanks to Agent X)"
       ],
       "activation": "See features list for specific move controls (e.g., Fire Tornado: Z + X)",
+      "youtubeVideoId": "9l7jSN3ac6w",
       "images": [
         "/placeholder.svg?height=400&width=600",
         "/placeholder.svg?height=400&width=600"
