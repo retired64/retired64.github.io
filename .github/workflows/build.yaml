@@ -17,7 +17,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-node: '18'
         
     - name: Setup pnpm
       uses: pnpm/action-setup@v2
@@ -43,18 +43,53 @@ jobs:
     - name: Build project
       run: pnpm run build
       
+    - name: Verify build output
+      run: |
+        echo "=== Root directory ==="
+        ls -la
+        echo ""
+        echo "=== Out folder contents ==="
+        ls -la out/ || echo "ERROR: out folder not found!"
+        echo ""
+        echo "=== Number of files in out ==="
+        find out -type f | wc -l || echo "Cannot count"
+      
     - name: Prepare docs folder
       run: |
-        rm -rf docs
-        mkdir -p docs
-        cp -r export/* docs/
+        # Limpiar docs pero mantener .gitkeep si existe
+        if [ -f "docs/.gitkeep" ]; then
+          find docs -mindepth 1 ! -name '.gitkeep' -delete
+        else
+          rm -rf docs
+          mkdir -p docs
+        fi
+        
+        # Copiar contenido del build
+        cp -r out/* docs/
         touch docs/.nojekyll
+        
+        echo "=== Docs folder after copy ==="
+        ls -la docs/
+        echo ""
+        echo "=== Total files in docs ==="
+        find docs -type f | wc -l
       
     - name: Commit and push docs folder
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add docs/ -f
-        git add docs/.nojekyll -f
-        git commit -m "Deploy to GitHub Pages [skip ci]" || exit 0
-        git push
+        
+        # Añadir todos los archivos en docs
+        git add docs/
+        
+        # Verificar si hay cambios
+        if git diff --staged --quiet; then
+          echo "⚠️ No changes detected in docs folder"
+        else
+          echo "✅ Changes detected, committing..."
+          git status
+          git commit -m "Deploy to GitHub Pages [skip ci]"
+          echo "✅ Pushing to repository..."
+          git push
+          echo "✅ Deploy completed successfully!"
+        fi
