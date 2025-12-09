@@ -4,13 +4,10 @@
       "id": "mario-size",
       "title": "Mario Size v1.0.1",
       "shortDescription": "Mario Size lets you shrink or grow Mario on the fly, changing how he moves around!",
-      "thumbnail": "/placeholder.svg?height=400&width=600",
+      "thumbnail": "https://cdn.jsdelivr.net/gh/retired64/retired64.github.io@main/m-s.png",
       "tags": [
         "Utility",
-        "Gameplay",
-        "Physics",
-        "SM64CoopDX",
-        "Multiplayer"
+        "Gameplay"
       ],
       "hasDownload": true,
       "downloadUrl": "https://github.com/retired64/Mario-Size/releases/download/v1.0.1/mario-size-changer-latest-1.0.1.zip",
@@ -56,6 +53,33 @@
       ],
       "activation": "Open Chat > Type /rdt [message] to start (Host only)",
       "youtubeVideoId": "fGHupYHuAd8",
+      "images": [
+        "/placeholder.svg?height=400&width=600",
+        "/placeholder.svg?height=400&width=600"
+      ]
+    },
+    {
+      "id": "fire-ball-marios-moveset",
+      "title": "Fire Ball Mario's Moveset v1.0",
+      "shortDescription": "Adds four new custom moves: Air Spin, Fire Tornado, Rocket Jump, and a shrinking Roll.",
+      "thumbnail": "/placeholder.svg?height=400&width=600",
+      "tags": [
+        "Moveset",
+        "Gameplay",
+        "New Abilities",
+        "Combat"
+      ],
+      "hasDownload": true,
+      "downloadUrl": "https://github.com/retired64/Fire-Ball-Marios-Moveset/releases/download/v1.0/FireBallMario-v1.0-latest.zip",
+      "detailedDescription": "Fire Ball Mario's Moveset adds four powerful custom moves: Air Spin, Fire Tornado, Rocket Jump, and Roll. Use these unique abilities to engage in crazy battles with your friends. Features the 'Door Bust' ability, implemented with thanks to Agent X. Report any bugs or share ideas!",
+      "features": [
+        "Air Spin: Press A in the air to spin mid-air with increasing speed and leave a fire trail.",
+        "Fire Tornado: Press Z + X (ground or air) for a fast spin that shoots fireballs and grows bigger by spamming X.",
+        "Rocket Jump: Press Z + Y to launch Mario high up like a rocket.",
+        "Roll: Press Z + B on the ground for fast movement; shrinks Mario down and continues to shrink by holding B.",
+        "Includes 'Door Bust' feature (thanks to Agent X)"
+      ],
+      "activation": "See features list for specific move controls (e.g., Fire Tornado: Z + X)",
       "images": [
         "/placeholder.svg?height=400&width=600",
         "/placeholder.svg?height=400&width=600"
