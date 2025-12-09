@@ -1,0 +1,60 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+        
+    - name: Get pnpm store directory
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+    - name: Setup pnpm cache
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+        
+    - name: Install dependencies
+      run: pnpm install --no-frozen-lockfile
+      
+    - name: Build project
+      run: pnpm run build
+      
+    - name: Copy build to docs folder
+      run: |
+        rm -rf docs
+        cp -r out docs
+      
+    - name: Add .nojekyll file
+      run: touch docs/.nojekyll
+      
+    - name: Commit and push docs folder
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add docs/ -f
+        git commit -m "Deploy to GitHub Pages [skip ci]" || exit 0
+        git push

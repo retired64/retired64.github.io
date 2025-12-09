@@ -1,0 +1,203 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@custom-variant dark (&:is(.dark *));
+
+/* Super Mario Bros themed color system */
+:root {
+  /* Light mode - Soft pink-white background, light blue and pastel accents */
+  --background: oklch(0.98 0.01 320); /* Soft pink-white */
+  --foreground: oklch(0.2 0.05 280); /* Deep blue-purple text */
+  --card: oklch(1 0 0); /* Pure white cards */
+  --card-foreground: oklch(0.2 0.05 280);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.05 280);
+  --primary: oklch(0.65 0.18 240); /* Light blue accent */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.92 0.03 340); /* Pastel pink */
+  --secondary-foreground: oklch(0.2 0.05 280);
+  --muted: oklch(0.95 0.01 320);
+  --muted-foreground: oklch(0.5 0.02 280);
+  --accent: oklch(0.85 0.08 60); /* Pastel yellow */
+  --accent-foreground: oklch(0.2 0.05 280);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.85 0.02 280);
+  --input: oklch(0.95 0.01 320);
+  --ring: oklch(0.65 0.18 240);
+  --chart-1: oklch(0.65 0.18 240);
+  --chart-2: oklch(0.85 0.08 60);
+  --chart-3: oklch(0.92 0.03 340);
+  --chart-4: oklch(0.7 0.15 140);
+  --chart-5: oklch(0.6 0.2 20);
+  --radius: 0rem; /* Pixelated, no rounded corners */
+
+  /* Mario-specific colors */
+  --mario-coin: oklch(0.85 0.15 85); /* Golden yellow */
+  --mario-brick: oklch(0.55 0.12 40); /* Brick orange */
+  --mario-block: oklch(0.75 0.08 60); /* Question block yellow */
+  --mario-pipe: oklch(0.5 0.15 140); /* Green pipe */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  /* Dark mode - Deep blue night sky, red and dark yellow accents */
+  --background: oklch(0.18 0.08 260); /* Deep blue night sky */
+  --foreground: oklch(0.95 0.01 60); /* Light yellow-white */
+  --card: oklch(0.22 0.08 260); /* Slightly lighter blue */
+  --card-foreground: oklch(0.95 0.01 60);
+  --popover: oklch(0.22 0.08 260);
+  --popover-foreground: oklch(0.95 0.01 60);
+  --primary: oklch(0.55 0.22 25); /* Bright red accent */
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.3 0.08 260); /* Darker blue */
+  --secondary-foreground: oklch(0.95 0.01 60);
+  --muted: oklch(0.28 0.06 260);
+  --muted-foreground: oklch(0.65 0.04 260);
+  --accent: oklch(0.65 0.18 70); /* Dark yellow accent */
+  --accent-foreground: oklch(0.15 0.08 260);
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.3 0.08 260);
+  --input: oklch(0.28 0.06 260);
+  --ring: oklch(0.55 0.22 25);
+  --chart-1: oklch(0.55 0.22 25);
+  --chart-2: oklch(0.65 0.18 70);
+  --chart-3: oklch(0.5 0.15 140);
+  --chart-4: oklch(0.7 0.12 200);
+  --chart-5: oklch(0.6 0.18 340);
+
+  /* Mario-specific colors for dark mode */
+  --mario-coin: oklch(0.8 0.18 85); /* Bright golden */
+  --mario-brick: oklch(0.45 0.15 35); /* Dark brick red */
+  --mario-block: oklch(0.7 0.15 70); /* Bright question block */
+  --mario-pipe: oklch(0.45 0.18 140); /* Dark green pipe */
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-pixel: "Press Start 2P", "Courier New", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --color-mario-coin: var(--mario-coin);
+  --color-mario-brick: var(--mario-brick);
+  --color-mario-block: var(--mario-block);
+  --color-mario-pipe: var(--mario-pipe);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    image-rendering: pixelated;
+  }
+
+  /* Pixelated aesthetic */
+  .pixel-border {
+    box-shadow: 0 -4px 0 0 currentColor, 4px 0 0 0 currentColor, 0 4px 0 0 currentColor, -4px 0 0 0 currentColor;
+  }
+
+  .pixel-corners {
+    clip-path: polygon(
+      0 4px,
+      4px 4px,
+      4px 0,
+      calc(100% - 4px) 0,
+      calc(100% - 4px) 4px,
+      100% 4px,
+      100% calc(100% - 4px),
+      calc(100% - 4px) calc(100% - 4px),
+      calc(100% - 4px) 100%,
+      4px 100%,
+      4px calc(100% - 4px),
+      0 calc(100% - 4px)
+    );
+  }
+}
+
+/* Floating coin animation */
+@keyframes float-coin {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-coin {
+  animation: float-coin 2s ease-in-out infinite;
+}
+
+/* Brick pattern background */
+.brick-pattern {
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 31px,
+      oklch(var(--mario-brick)) 31px,
+      oklch(var(--mario-brick)) 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 63px,
+      oklch(var(--mario-brick)) 63px,
+      oklch(var(--mario-brick)) 64px
+    );
+}
