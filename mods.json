@@ -10,7 +10,7 @@
         "Gameplay"
       ],
       "hasDownload": true,
-      "downloadUrl": "https://github.com/retired64/Mario-Size/releases/download/v1.0.1/mario-size-changer-latest-1.0.1.zip",
+      "downloadUrl": "https://github.com/retired64/Releases/releases/download/releases-lts/mario-size-changer-latest-1.0.1.zip",
       "detailedDescription": "Mario Size lets you shrink or grow Mario on the fly, changing how he moves around! Inspired by 'Fire Ball Mario's Moveset', this independent mod is perfect for speedruns, challenges, or just messing around. It functions as a neutral gameplay experience compatible with multiplayer. This version (v1.0.1) serves as the stable release with critical bug fixes for level entry freezes and optimized camera logic. Requires sm64coopdx v1.4 or above.",
       "features": [
         "Shrink Mode: Hold Y to get smaller and walk faster",
@@ -22,9 +22,9 @@
         "Requires sm64coopdx v1.4 or above"
       ],
       "activation": "Hold Y (Shrink) > Press Y twice & Hold (Grow) > Press X (Reset)",
+      "youtubeVideoId": "9l7jSN3ac6w",
       "images": [
-        "/placeholder.svg?height=400&width=600",
-        "/placeholder.svg?height=400&width=600"
+        "https://cdn.jsdelivr.net/gh/retired64/retired64.github.io@main/m-s.png"
       ]
     },
     {
@@ -70,7 +70,7 @@
         "Combat"
       ],
       "hasDownload": true,
-      "downloadUrl": "https://github.com/retired64/Fire-Ball-Marios-Moveset/releases/download/v1.0/FireBallMario-v1.0-latest.zip",
+      "downloadUrl": "https://github.com/retired64/Releases/releases/download/releases-lts/FireBallMario-v1.0-latest.zip",
       "detailedDescription": "Fire Ball Mario's Moveset adds four powerful custom moves: Air Spin, Fire Tornado, Rocket Jump, and Roll. Use these unique abilities to engage in crazy battles with your friends. Features the 'Door Bust' ability, implemented with thanks to Agent X. Report any bugs or share ideas!",
       "features": [
         "Air Spin: Press A in the air to spin mid-air with increasing speed and leave a fire trail.",
