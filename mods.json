@@ -6,8 +6,7 @@
       "shortDescription": "Mario Size lets you shrink or grow Mario on the fly, changing how he moves around!",
       "thumbnail": "https://cdn.jsdelivr.net/gh/retired64/retired64.github.io@main/m-s.png",
       "tags": [
-        "Utility",
-        "Gameplay"
+        "Utility"
       ],
       "hasDownload": true,
       "downloadUrl": "https://github.com/retired64/Releases/releases/download/releases-lts/mario-size-changer-latest-1.0.1.zip",
@@ -61,10 +60,7 @@
       "shortDescription": "Adds four new custom moves: Air Spin, Fire Tornado, Rocket Jump, and a shrinking Roll.",
       "thumbnail": "https://cdn.jsdelivr.net/gh/retired64/Releases@main/fbm.webp",
       "tags": [
-        "Moveset",
-        "Gameplay",
-        "New Abilities",
-        "Combat"
+        "Moveset"
       ],
       "hasDownload": true,
       "downloadUrl": "https://github.com/retired64/Releases/releases/download/releases-lts/FireBallMario-v1.0-latest.zip",
