@@ -14,7 +14,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3 group">
             <MarioCoin className="group-hover:scale-110 transition-transform" />
             <h1 className="font-[family-name:var(--font-pixel)] text-lg md:text-xl text-primary leading-relaxed">
-              MARIO MODS
+              _RD64_
             </h1>
           </Link>
 
@@ -57,8 +57,8 @@ export function Header() {
         </div>
 
         <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
-          Welcome to the ultimate Super Mario Bros mod repository! Browse, search, and download amazing mods with our
-          retro 8-bit style interface. Power up your gaming experience!
+          Welcome to retired64 mod repository! Browse, search, and download amazing mods with our
+          Sm64CoopDX. Power up your gaming experience!
         </p>
       </div>
     </header>

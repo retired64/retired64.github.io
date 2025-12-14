@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: ModPageProps) {
   }
 
   return {
-    title: `${mod.title} - Mario Mods Repository`,
+    title: `${mod.title} - Sm64CoopDx Retired64 MODS`,
     description: mod.shortDescription,
   }
 }
@@ -236,7 +236,7 @@ export default async function ModPage({ params }: ModPageProps) {
       <footer className="border-t-4 border-border bg-card mt-16">
         <div className="container mx-auto px-4 py-8 text-center">
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Made with ❤️ for the Mario modding community
+            Made with ❤️ for Retired64
           </p>
         </div>
       </footer>

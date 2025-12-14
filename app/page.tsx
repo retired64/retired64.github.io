@@ -48,8 +48,9 @@ export default function HomePage() {
     return filteredMods.slice(0, visibleCount)
   }, [filteredMods, visibleCount])
 
+// ESTO ES LO NUEVO (Copia y pega esto):
   const handleTagToggle = useCallback((tag: string) => {
-    setSelectedTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]))
+    setSelectedTags((prev) => prev.includes(tag) ? [] : [tag])
   }, [])
 
   const handleLoadMore = useCallback(() => {
@@ -133,7 +134,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t-4 border-border bg-card mt-16">
         <div className="container mx-auto px-4 py-8 text-center">
-          <p className="text-xs text-muted-foreground leading-relaxed">Made with ❤️ for the Mario modding community</p>
+          <p className="text-xs text-muted-foreground leading-relaxed">Made with ❤️ for Retired64</p>
         </div>
       </footer>
     </div>
