@@ -11,7 +11,7 @@ pinned: true
 
 ---
 
-## ¿Qué vas a lograr?
+## ¿Qué vas a lograr? Update Cactus
 
 Al terminar esta guía tendrás un sitio web con blog personal publicado en internet,
 completamente gratis, con modo oscuro y claro, búsqueda integrada y optimizado para SEO.
@@ -19,6 +19,12 @@ Todo hecho desde tu celular Android usando Termux y Git. El build lo hace GitHub
 automáticamente en sus servidores cada vez que subes un cambio.
 
 ---
+
+
+:::tip
+Ejemplo desde el editor android
+:::
+
 
 ## ¿Cómo funciona este enfoque?
 
