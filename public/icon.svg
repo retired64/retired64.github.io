@@ -1,1 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 272 480"><path fill="#cdffb8" d="M181.334 93.333v-40L226.667 80v40zM136.001 53.333 90.667 26.667v426.666L136.001 480zM45.333 220 0 193.334v140L45.333 360z"/><path fill="#d482ab" d="M90.667 26.667 136.001 0l45.333 26.667-45.333 26.666zM181.334 53.33l45.333-26.72L272 53.33 226.667 80zM136 240l-45.333-26.67v53.34zM0 193.33l45.333-26.72 45.334 26.72L45.333 220zM181.334 93.277 226.667 120l-45.333 26.67z"/><path fill="#2abc89" d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V220l45.333-26.667v73.334L136 240z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" fill="none">
+
+  <!-- Sombrero ala -->
+  <ellipse cx="100" cy="78" rx="52" ry="10" fill="#2a1a0a"/>
+  <!-- Sombrero copa -->
+  <rect x="62" y="30" width="76" height="50" rx="8" fill="#2a1a0a"/>
+  <!-- Cinta del sombrero -->
+  <rect x="62" y="68" width="76" height="8" rx="2" fill="#8B4513"/>
+  <!-- Detalle copa sombrero -->
+  <rect x="68" y="36" width="64" height="4" rx="2" fill="#1a0f05" opacity="0.5"/>
+
+  <!-- Cara base -->
+  <ellipse cx="100" cy="108" rx="32" ry="34" fill="#c8874a"/>
+
+  <!-- Barba lateral izquierda -->
+  <ellipse cx="72" cy="118" rx="10" ry="18" fill="#e8e0d0" transform="rotate(-8 72 118)"/>
+  <!-- Barba lateral derecha -->
+  <ellipse cx="128" cy="118" rx="10" ry="18" fill="#e8e0d0" transform="rotate(8 128 118)"/>
+  <!-- Bigote -->
+  <ellipse cx="100" cy="118" rx="20" ry="8" fill="#e8e0d0"/>
+  <!-- Barba central / mentón -->
+  <ellipse cx="100" cy="132" rx="22" ry="14" fill="#e8e0d0"/>
+  <!-- Detalle barba - líneas -->
+  <path d="M88 122 Q100 130 112 122" stroke="#c8c0b0" stroke-width="1.5" fill="none"/>
+  <path d="M84 128 Q100 138 116 128" stroke="#c8c0b0" stroke-width="1.5" fill="none"/>
+  <path d="M90 135 Q100 142 110 135" stroke="#c8c0b0" stroke-width="1.5" fill="none"/>
+
+  <!-- Cejas -->
+  <path d="M78 95 Q88 90 96 93" stroke="#5a3a1a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M104 93 Q112 90 122 95" stroke="#5a3a1a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Ojos -->
+  <ellipse cx="88" cy="102" rx="6" ry="6.5" fill="white"/>
+  <ellipse cx="112" cy="102" rx="6" ry="6.5" fill="white"/>
+  <circle cx="89" cy="103" r="3.5" fill="#3a2010"/>
+  <circle cx="113" cy="103" r="3.5" fill="#3a2010"/>
+  <circle cx="90.5" cy="101.5" r="1.2" fill="white"/>
+  <circle cx="114.5" cy="101.5" r="1.2" fill="white"/>
+
+  <!-- Nariz -->
+  <path d="M97 108 Q100 115 103 108" stroke="#a06030" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Orejas -->
+  <ellipse cx="68" cy="108" rx="7" ry="9" fill="#c8874a"/>
+  <ellipse cx="132" cy="108" rx="7" ry="9" fill="#c8874a"/>
+  <ellipse cx="68" cy="108" rx="4" ry="6" fill="#b07040"/>
+  <ellipse cx="132" cy="108" rx="4" ry="6" fill="#b07040"/>
+
+  <!-- Cuello -->
+  <rect x="90" y="138" width="20" height="16" rx="4" fill="#c8874a"/>
+
+  <!-- Camisa / cuerpo base (cuadros estilo flannel) -->
+  <rect x="52" y="150" width="96" height="100" rx="12" fill="#4a6fa5"/>
+  <!-- Patrón cuadros camisa -->
+  <rect x="52" y="150" width="96" height="100" rx="12" fill="url(#plaid)" opacity="0.6"/>
+
+  <defs>
+    <pattern id="plaid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none"/>
+      <line x1="8" y1="0" x2="8" y2="16" stroke="#8B4513" stroke-width="2" opacity="0.5"/>
+      <line x1="0" y1="8" x2="16" y2="8" stroke="#8B4513" stroke-width="2" opacity="0.5"/>
+      <line x1="0" y1="0" x2="16" y2="16" stroke="#6a3a0a" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Bolsillo camisa -->
+  <rect x="88" y="162" width="22" height="18" rx="3" fill="#3a5f95" stroke="#2a4f85" stroke-width="1"/>
+  <!-- Lápiz en bolsillo -->
+  <rect x="96" y="158" width="3" height="12" rx="1" fill="#f5c842"/>
+  <polygon points="96,170 99,170 97.5,175" fill="#e8a830"/>
+
+  <!-- Botones camisa -->
+  <circle cx="100" cy="158" r="2" fill="#2a4f85"/>
+  <circle cx="100" cy="168" r="2" fill="#2a4f85"/>
+  <circle cx="100" cy="178" r="2" fill="#2a4f85"/>
+
+  <!-- Cuello camisa -->
+  <path d="M85 152 L100 168 L115 152" stroke="#3a5f95" stroke-width="2" fill="none"/>
+
+  <!-- Brazo izquierdo -->
+  <rect x="28" y="152" width="26" height="72" rx="12" fill="#4a6fa5"/>
+  <rect x="28" y="152" width="26" height="72" rx="12" fill="url(#plaid)" opacity="0.6"/>
+  <!-- Mano izquierda -->
+  <ellipse cx="41" cy="228" rx="13" ry="11" fill="#c8874a"/>
+  <!-- Dedos mano izquierda -->
+  <ellipse cx="30" cy="222" rx="5" ry="8" fill="#c8874a" transform="rotate(-15 30 222)"/>
+  <ellipse cx="36" cy="218" rx="5" ry="9" fill="#c8874a" transform="rotate(-5 36 218)"/>
+  <ellipse cx="46" cy="218" rx="5" ry="9" fill="#c8874a" transform="rotate(5 46 218)"/>
+  <ellipse cx="52" cy="222" rx="5" ry="8" fill="#c8874a" transform="rotate(15 52 222)"/>
+
+  <!-- Brazo derecho -->
+  <rect x="146" y="152" width="26" height="72" rx="12" fill="#4a6fa5"/>
+  <rect x="146" y="152" width="26" height="72" rx="12" fill="url(#plaid)" opacity="0.6"/>
+  <!-- Mano derecha -->
+  <ellipse cx="159" cy="228" rx="13" ry="11" fill="#c8874a"/>
+  <!-- Dedos mano derecha -->
+  <ellipse cx="148" cy="222" rx="5" ry="8" fill="#c8874a" transform="rotate(-15 148 222)"/>
+  <ellipse cx="154" cy="218" rx="5" ry="9" fill="#c8874a" transform="rotate(-5 154 218)"/>
+  <ellipse cx="164" cy="218" rx="5" ry="9" fill="#c8874a" transform="rotate(5 164 218)"/>
+  <ellipse cx="170" cy="222" rx="5" ry="8" fill="#c8874a" transform="rotate(15 170 222)"/>
+
+  <!-- Texto CSS flotante decorativo -->
+  <text x="22" y="48" font-family="monospace" font-size="9" fill="#4a9eff" opacity="0.7" transform="rotate(-12 22 48)">CSS</text>
+  <text x="155" y="44" font-family="monospace" font-size="8" fill="#ff6b6b" opacity="0.6" transform="rotate(10 155 44)">&lt;/&gt;</text>
+  <text x="16" y="170" font-family="monospace" font-size="7" fill="#50fa7b" opacity="0.5">{}</text>
+  <text x="168" y="175" font-family="monospace" font-size="7" fill="#bd93f9" opacity="0.5">#</text>
+
+</svg>
