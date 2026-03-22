@@ -6,8 +6,6 @@ tags: ["astro", "web"]
 pinned: true
 ---
 
-# Sitio web gratis desde Android con Termux y GitHub Pages
-
 > Guía completa paso a paso para publicar un blog profesional usando Astro Cactus,
 > sin pagar hosting, sin necesitar computadora, sin instalar Node.js.
 
