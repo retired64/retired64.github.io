@@ -20,12 +20,6 @@ automáticamente en sus servidores cada vez que subes un cambio.
 
 ---
 
-
-:::tip
-Ejemplo desde el editor android
-:::
-
-
 ## ¿Cómo funciona este enfoque?
 
 En lugar de instalar Node.js y pnpm en Termux, usamos **GitHub Actions** para construir
